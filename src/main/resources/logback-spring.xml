@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${catalina.base}/logs/logs.log</file>
+        <!-- 파일이 하루에 한개씩 생성된다 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	          	<fileNamePattern>${catalina.base}/logs/log-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+	            <maxHistory>90</maxHistory>
+	            <timeBasedFileNamingAndTriggeringPolicy                  class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+	                <!-- or whenever the file size reaches 100MB -->
+	                <maxFileSize>100MB</maxFileSize>
+	            </timeBasedFileNamingAndTriggeringPolicy>
+	    </rollingPolicy>
+	   
+        <encoder>
+            <!-- <pattern>%-5relative %-5level %logger{35} - %msg%n</pattern> -->
+        	<pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+    
+
+
+
+
+
+    <logger name="jdbc" level="OFF"/>
+
+    <logger name="jdbc.sqlonly" level="OFF"/>
+    <logger name="jdbc.sqltiming" level="INFO, ERROR"/>
+    <logger name="jdbc.audit" level="OFF"/>
+    <logger name="jdbc.resultset" level="OFF"/>
+    <logger name="jdbc.resultsettable" level="ERROR"/>
+    <logger name="jdbc.connection" level="OFF"/>
+    
+    <logger name="com.bitsm" level="INFO, ERROR"/>
+
+    <root level="INFO, ERROR">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>

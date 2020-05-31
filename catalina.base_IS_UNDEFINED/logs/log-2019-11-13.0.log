@@ -1,0 +1,1379 @@
+2019-11-13 00:52:14.034 DEBUG 32439 --- [           main] .c.l.ClasspathLoggingApplicationListener : Application started with classpath: [file:/Users/jinhobae/git/repository/review/target/surefire/surefirebooter1203842636499560012.jar]
+2019-11-13 00:52:14.043 DEBUG 32439 --- [kground-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-11-13 00:52:14.051 DEBUG 32439 --- [kground-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-11-13 00:52:14.052 DEBUG 32439 --- [kground-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-11-13 00:52:14.052 DEBUG 32439 --- [kground-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-11-13 00:52:14.052 DEBUG 32439 --- [kground-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-11-13 00:52:14.052 DEBUG 32439 --- [kground-preinit] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-11-13 00:52:14.140  INFO 32439 --- [           main] c.chicken.review.ReviewApplicationTests  : Starting ReviewApplicationTests on jinhoui-MacBookPro.local with PID 32439 (started by jinhobae in /Users/jinhobae/git/repository/review)
+2019-11-13 00:52:14.141 DEBUG 32439 --- [           main] c.chicken.review.ReviewApplicationTests  : Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-13 00:52:14.141  INFO 32439 --- [           main] c.chicken.review.ReviewApplicationTests  : No active profile set, falling back to default profiles: default
+2019-11-13 00:52:14.142 DEBUG 32439 --- [           main] o.s.boot.SpringApplication               : Loading source class com.chicken.review.ReviewApplication
+2019-11-13 00:52:14.158 DEBUG 32439 --- [           main] o.s.b.c.c.ConfigFileApplicationListener  : Loaded config file 'file:/Users/jinhobae/git/repository/review/target/classes/application.properties' (classpath:/application.properties)
+2019-11-13 00:52:14.159 DEBUG 32439 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0
+2019-11-13 00:52:14.172 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2019-11-13 00:52:14.182 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2019-11-13 00:52:14.209 DEBUG 32439 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/jinhobae/git/repository/review/target/classes/com/chicken/review/config/ErrorConfiguration.class]
+2019-11-13 00:52:14.210 DEBUG 32439 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/jinhobae/git/repository/review/target/classes/com/chicken/review/config/StaticResourceConfiguration.class]
+2019-11-13 00:52:14.211 DEBUG 32439 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/jinhobae/git/repository/review/target/classes/com/chicken/review/config/TilesConfig.class]
+2019-11-13 00:52:14.214 DEBUG 32439 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/jinhobae/git/repository/review/target/classes/com/chicken/review/config/WebSecurityConfig.class]
+2019-11-13 00:52:14.216 DEBUG 32439 --- [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [/Users/jinhobae/git/repository/review/target/classes/com/chicken/review/login/controller/UserController.class]
+2019-11-13 00:52:14.298 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.messages.basename' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.338 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.mvc.view.prefix' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.338 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.mvc.view.suffix' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.350 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.resources.chain.enabled' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.366 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.377 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.405 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.aop.proxy-target-class' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.408 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.aop.proxy-target-class' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:14.412 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.http.encoding.enabled' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.448 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry'
+2019-11-13 00:52:17.480 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.mvc.view.prefix' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.481 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.mvc.view.suffix' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.507 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.resources.chain.enabled' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.521 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2019-11-13 00:52:17.526 DEBUG 32439 --- [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.chicken.review'. Automatic @Repository and @Entity scanning is enabled.
+2019-11-13 00:52:17.526 DEBUG 32439 --- [           main] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2019-11-13 00:52:17.526 DEBUG 32439 --- [           main] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.chicken.review'
+2019-11-13 00:52:17.559 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.aop.proxy-target-class' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.568 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.http.encoding.enabled' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.570 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'characterEncodingFilter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=reviewApplication; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in com.chicken.review.ReviewApplication] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration; factoryMethodName=characterEncodingFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class]]
+2019-11-13 00:52:17.576 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'cloud.aws.region.static' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.576 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'cloud.aws.region.static' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.594 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer'
+2019-11-13 00:52:17.595 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'credentialsProvider'
+2019-11-13 00:52:17.604 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2019-11-13 00:52:17.611 DEBUG 32439 --- [           main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2019-11-13 00:52:17.615  WARN 32439 --- [           main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chicken.review]' package. Please check your configuration.
+2019-11-13 00:52:17.742 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2019-11-13 00:52:17.760 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2019-11-13 00:52:17.760 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationBeanFactoryMetadata'
+2019-11-13 00:52:17.761 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+2019-11-13 00:52:17.762 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2019-11-13 00:52:17.762 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2019-11-13 00:52:17.768 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2019-11-13 00:52:17.769 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2019-11-13 00:52:17.770 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2019-11-13 00:52:17.771 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2019-11-13 00:52:17.773 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'methodValidationPostProcessor'
+2019-11-13 00:52:17.782 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+2019-11-13 00:52:17.782 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.aop.proxy-target-class' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.793 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+2019-11-13 00:52:17.797 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+2019-11-13 00:52:17.798 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+2019-11-13 00:52:17.799 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.aop.proxy-target-class' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:17.807 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2019-11-13 00:52:17.817 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+2019-11-13 00:52:17.820 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+2019-11-13 00:52:17.823 DEBUG 32439 --- [           main] o.s.u.c.s.UiApplicationContextUtils      : Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@4a03bb68]
+2019-11-13 00:52:17.825 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'reviewApplication'
+2019-11-13 00:52:17.829 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2019-11-13 00:52:17.830 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2019-11-13 00:52:17.844 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionAttributeSource'
+2019-11-13 00:52:17.847 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionInterceptor'
+2019-11-13 00:52:17.858 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorConfiguration'
+2019-11-13 00:52:17.861 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'staticResourceConfiguration'
+2019-11-13 00:52:17.865 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tilesConfig'
+2019-11-13 00:52:17.867 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webSecurityConfig'
+2019-11-13 00:52:17.875 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'objectPostProcessor'
+2019-11-13 00:52:17.875 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
+2019-11-13 00:52:17.879 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@31ff43be'
+2019-11-13 00:52:17.889 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2019-11-13 00:52:17.889 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+2019-11-13 00:52:17.890 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration$$EnhancerBySpringCGLIB$$4c6cb42e] - unable to determine constructor/method parameter names
+2019-11-13 00:52:17.891 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2019-11-13 00:52:17.912 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2019-11-13 00:52:17.913 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@31ff43be'
+2019-11-13 00:52:17.914 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2019-11-13 00:52:17.935 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration'
+2019-11-13 00:52:17.938 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+2019-11-13 00:52:17.938 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$$EnhancerBySpringCGLIB$$ee707f13] - unable to determine constructor/method parameter names
+2019-11-13 00:52:17.938 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2019-11-13 00:52:17.939 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2019-11-13 00:52:17.939 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@31ff43be'
+2019-11-13 00:52:17.939 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'resourceHandlerRegistrationCustomizer'
+2019-11-13 00:52:17.940 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$ResourceChainCustomizerConfiguration'
+2019-11-13 00:52:17.964 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
+2019-11-13 00:52:17.968 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
+2019-11-13 00:52:17.968 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:17.971 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
+2019-11-13 00:52:17.972 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:17.974 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
+2019-11-13 00:52:17.975 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:17.979 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'userController'
+2019-11-13 00:52:17.981 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webServerFactory'
+2019-11-13 00:52:18.009 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+2019-11-13 00:52:18.010 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+2019-11-13 00:52:18.016 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+2019-11-13 00:52:18.016 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+2019-11-13 00:52:18.020 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2019-11-13 00:52:18.027 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2019-11-13 00:52:18.031 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+2019-11-13 00:52:18.032 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2019-11-13 00:52:18.033 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+2019-11-13 00:52:18.034 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+2019-11-13 00:52:18.037 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+2019-11-13 00:52:18.037 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2019-11-13 00:52:18.042 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+2019-11-13 00:52:18.042 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+2019-11-13 00:52:18.042 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration$$EnhancerBySpringCGLIB$$b4d41a50] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.043 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2019-11-13 00:52:18.046 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2019-11-13 00:52:18.070 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorPageCustomizer'
+2019-11-13 00:52:18.070 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+2019-11-13 00:52:18.071 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$$EnhancerBySpringCGLIB$$d2b6933] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.072 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dispatcherServletRegistration'
+2019-11-13 00:52:18.072 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+2019-11-13 00:52:18.072 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration$$EnhancerBySpringCGLIB$$9386881e] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.072 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2019-11-13 00:52:18.073 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'multipartConfigElement'
+2019-11-13 00:52:18.074 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+2019-11-13 00:52:18.074 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration$$EnhancerBySpringCGLIB$$23c4a25d] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.074 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2019-11-13 00:52:18.077 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+2019-11-13 00:52:18.086 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dispatcherServlet'
+2019-11-13 00:52:18.086 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+2019-11-13 00:52:18.087 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration$$EnhancerBySpringCGLIB$$317ef377] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.087 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2019-11-13 00:52:18.087 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2019-11-13 00:52:18.105 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+2019-11-13 00:52:18.113 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2019-11-13 00:52:18.113 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'dispatcherServletRegistration'
+2019-11-13 00:52:18.114 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'conventionErrorViewResolver'
+2019-11-13 00:52:18.114 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+2019-11-13 00:52:18.114 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration$$EnhancerBySpringCGLIB$$21c03dd3] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.115 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:18.115 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2019-11-13 00:52:18.129 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tilesConfigurer'
+2019-11-13 00:52:18.199 DEBUG 32439 --- [           main] org.apache.commons.digester.Digester     : register('-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN', 'jar:file:/Users/jinhobae/.m2/repository/org/apache/tiles/tiles-core/3.0.7/tiles-core-3.0.7.jar!/org/apache/tiles/resources/tiles-config_3_0.dtd'
+2019-11-13 00:52:18.215  INFO 32439 --- [           main] org.apache.tiles.access.TilesAccess      : Publishing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2019-11-13 00:52:18.216 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tilesViewResolver'
+2019-11-13 00:52:18.223 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationManagerBuilder'
+2019-11-13 00:52:18.224 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
+2019-11-13 00:52:18.224 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:18.227 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationEventPublisher'
+2019-11-13 00:52:18.227 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+2019-11-13 00:52:18.230 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:18.240 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'
+2019-11-13 00:52:18.256 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'autowiredWebSecurityConfigurersIgnoreParents'
+2019-11-13 00:52:18.257 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'autowiredWebSecurityConfigurersIgnoreParents' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@31ff43be'
+2019-11-13 00:52:18.269 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'delegatingApplicationListener'
+2019-11-13 00:52:18.271 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springSecurityFilterChain'
+2019-11-13 00:52:18.276 DEBUG 32439 --- [           main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=com.chicken.review.config.WebSecurityConfig$$EnhancerBySpringCGLIB$$ff20adcd@58e85c6f}
+2019-11-13 00:52:18.278 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'inMemoryUserDetailsManager'
+2019-11-13 00:52:18.278 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration'
+2019-11-13 00:52:18.281 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2019-11-13 00:52:18.286 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'inMemoryUserDetailsManager' via factory method to bean named 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2019-11-13 00:52:18.290  INFO 32439 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 37678edc-0c1a-476a-855d-42367f588499
+
+2019-11-13 00:52:18.333  INFO 32439 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2019-11-13 00:52:18.333  INFO 32439 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2019-11-13 00:52:18.333  INFO 32439 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/img/**'], []
+2019-11-13 00:52:18.334  INFO 32439 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/fonts/**'], []
+2019-11-13 00:52:18.334  INFO 32439 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2019-11-13 00:52:18.378 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login?error']
+2019-11-13 00:52:18.378 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login']
+2019-11-13 00:52:18.378 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for OrRequestMatcher [requestMatchers=[Ant [pattern='/logout', GET], Ant [pattern='/logout', POST], Ant [pattern='/logout', PUT], Ant [pattern='/logout', DELETE]]]
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for ExactUrl [processUrl='/login?logout']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/css/**']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/js/**']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/img/**']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/fonts/**']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/resources/**']
+2019-11-13 00:52:18.379 DEBUG 32439 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2019-11-13 00:52:18.384 DEBUG 32439 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2019-11-13 00:52:18.385 DEBUG 32439 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2019-11-13 00:52:18.395  INFO 32439 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@706eab5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2eb917d0, org.springframework.security.web.header.HeaderWriterFilter@7a1f45ed, org.springframework.security.web.authentication.logout.LogoutFilter@14d8444b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4248b963, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73437222, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4096aa05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72725ee1, org.springframework.security.web.session.SessionManagementFilter@444cc791, org.springframework.security.web.access.ExceptionTranslationFilter@8a98f38, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cd166b8]
+2019-11-13 00:52:18.400 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webSecurityExpressionHandler'
+2019-11-13 00:52:18.401 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'privilegeEvaluator'
+2019-11-13 00:52:18.403 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestDataValueProcessor'
+2019-11-13 00:52:18.404 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'characterEncodingFilter'
+2019-11-13 00:52:18.410 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration'
+2019-11-13 00:52:18.412 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration'
+2019-11-13 00:52:18.413 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration'
+2019-11-13 00:52:18.415 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2019-11-13 00:52:18.416 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration$$EnhancerBySpringCGLIB$$6d1efc84] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.417 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2019-11-13 00:52:18.418 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration' via constructor to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2019-11-13 00:52:18.420 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'taskExecutorBuilder'
+2019-11-13 00:52:18.424 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration'
+2019-11-13 00:52:18.427 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultValidator'
+2019-11-13 00:52:18.429 DEBUG 32439 --- [           main] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-11-13 00:52:18.429 DEBUG 32439 --- [           main] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-11-13 00:52:18.434 DEBUG 32439 --- [           main] o.h.v.i.e.resolver.TraversableResolvers  : Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-11-13 00:52:18.434 DEBUG 32439 --- [           main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-11-13 00:52:18.435 DEBUG 32439 --- [           main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-11-13 00:52:18.435 DEBUG 32439 --- [           main] o.h.v.internal.engine.ConfigurationImpl  : Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2019-11-13 00:52:18.435 DEBUG 32439 --- [           main] o.h.v.i.xml.config.ValidationXmlParser   : Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-11-13 00:52:18.436 DEBUG 32439 --- [           main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via user class loader
+2019-11-13 00:52:18.436 DEBUG 32439 --- [           main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via TCCL
+2019-11-13 00:52:18.436 DEBUG 32439 --- [           main] o.h.v.i.xml.config.ResourceLoaderHelper  : Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-11-13 00:52:18.436 DEBUG 32439 --- [           main] o.h.v.i.xml.config.ValidationXmlParser   : No META-INF/validation.xml found. Using annotation based configuration only.
+2019-11-13 00:52:18.440 DEBUG 32439 --- [           main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2019-11-13 00:52:18.440 DEBUG 32439 --- [           main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2019-11-13 00:52:18.440 DEBUG 32439 --- [           main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2019-11-13 00:52:18.440 DEBUG 32439 --- [           main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2019-11-13 00:52:18.440 DEBUG 32439 --- [           main] o.h.v.i.engine.ValidatorFactoryImpl      : HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2019-11-13 00:52:18.441 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration'
+2019-11-13 00:52:18.444 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'error'
+2019-11-13 00:52:18.447 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'beanNameViewResolver'
+2019-11-13 00:52:18.451 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorAttributes'
+2019-11-13 00:52:18.453 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'basicErrorController'
+2019-11-13 00:52:18.454 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+2019-11-13 00:52:18.458 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration'
+2019-11-13 00:52:18.458 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration$$EnhancerBySpringCGLIB$$aaad8759] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.459 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration' via constructor to bean named 'spring.resources-org.springframework.boot.autoconfigure.web.ResourceProperties'
+2019-11-13 00:52:18.461 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'faviconHandlerMapping'
+2019-11-13 00:52:18.465 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'faviconRequestHandler'
+2019-11-13 00:52:18.482 DEBUG 32439 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-11-13 00:52:18.483 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2019-11-13 00:52:18.492 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'messageConverters'
+2019-11-13 00:52:18.492 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+2019-11-13 00:52:18.492 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$fbb32f42] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.494 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'stringHttpMessageConverter'
+2019-11-13 00:52:18.495 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+2019-11-13 00:52:18.495 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$2ec0f5e2] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.495 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2019-11-13 00:52:18.502 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+2019-11-13 00:52:18.502 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+2019-11-13 00:52:18.505 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2019-11-13 00:52:18.505 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+2019-11-13 00:52:18.509 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonObjectMapperBuilder'
+2019-11-13 00:52:18.509 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+2019-11-13 00:52:18.509 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$ef5fa558] - unable to determine constructor/method parameter names
+2019-11-13 00:52:18.509 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:18.513 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+2019-11-13 00:52:18.513 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+2019-11-13 00:52:18.517 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2019-11-13 00:52:18.519 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:18.519 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2019-11-13 00:52:18.522 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+2019-11-13 00:52:18.525 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'parameterNamesModule'
+2019-11-13 00:52:18.525 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+2019-11-13 00:52:18.536 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jsonComponentModule'
+2019-11-13 00:52:18.536 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+2019-11-13 00:52:18.547 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+2019-11-13 00:52:18.572 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+2019-11-13 00:52:18.590 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcConversionService'
+2019-11-13 00:52:18.597 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcValidator'
+2019-11-13 00:52:18.604 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'applicationTaskExecutor'
+2019-11-13 00:52:18.605 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+2019-11-13 00:52:18.615  INFO 32439 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-13 00:52:18.632 DEBUG 32439 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-11-13 00:52:18.655 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2019-11-13 00:52:18.664 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2019-11-13 00:52:18.702 DEBUG 32439 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-11-13 00:52:18.703 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+2019-11-13 00:52:18.703 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:18.706 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.mvc.view.prefix' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:18.707 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'spring.mvc.view.suffix' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:18.716 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcPathMatcher'
+2019-11-13 00:52:18.718 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2019-11-13 00:52:18.720 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2019-11-13 00:52:18.721 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2019-11-13 00:52:18.732 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'resourceHandlerMapping'
+2019-11-13 00:52:18.741 DEBUG 32439 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-11-13 00:52:18.741 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2019-11-13 00:52:18.742 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2019-11-13 00:52:18.745 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2019-11-13 00:52:18.747 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2019-11-13 00:52:18.749 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'handlerExceptionResolver'
+2019-11-13 00:52:18.753 DEBUG 32439 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-11-13 00:52:18.758 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcViewResolver'
+2019-11-13 00:52:18.764 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultViewResolver'
+2019-11-13 00:52:18.773 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewResolver'
+2019-11-13 00:52:18.774 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@31ff43be'
+2019-11-13 00:52:18.781 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestContextFilter'
+2019-11-13 00:52:18.788 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+2019-11-13 00:52:18.791 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'hiddenHttpMethodFilter'
+2019-11-13 00:52:18.797 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'formContentFilter'
+2019-11-13 00:52:18.803 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.autoconfigure.jdbc.AmazonRdsDatabaseAutoConfiguration'
+2019-11-13 00:52:18.806 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'amazonRDS'
+2019-11-13 00:52:18.811 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'regionProvider'
+2019-11-13 00:52:18.940 DEBUG 32439 --- [           main] com.amazonaws.AmazonWebServiceClient     : Internal logging successfully configured to commons logger: true
+2019-11-13 00:52:19.124 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@f9f3928: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-13 00:52:19.124 DEBUG 32439 --- [nnection-reaper] h.i.c.PoolingHttpClientConnectionManager : Closing connections idle longer than 60000 MILLISECONDS
+2019-11-13 00:52:19.124 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@404eca05: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-13 00:52:19.124 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@58b91d57: Unable to load config file
+2019-11-13 00:52:19.157 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+2019-11-13 00:52:19.159 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dataSource'
+2019-11-13 00:52:19.160 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2019-11-13 00:52:19.166 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2019-11-13 00:52:19.177 DEBUG 32439 --- [           main] com.zaxxer.hikari.HikariConfig           : Driver class net.sf.log4jdbc.sql.jdbcapi.DriverSpy found in Thread context class loader sun.misc.Launcher$AppClassLoader@6bc7c054
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : log4jdbc-logj2 properties initialization...
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : Using logger: net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.debug.stack.prefix is not defined
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.sqltiming.warn.threshold is not defined
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.sqltiming.error.threshold is not defined
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           :   log4jdbc.dump.sql.maxlinelength = 0
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.statement.warn is not defined (using default value false)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.sql.select is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.sql.insert is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.sql.update is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.sql.delete is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.sql.create is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.drivers is not defined
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.trim.sql is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : log4jdbc-logj2 properties initialization done.
+2019-11-13 00:52:19.180 DEBUG 32439 --- [           main] log4jdbc.debug                           : DriverSpy intialization...
+2019-11-13 00:52:19.185 DEBUG 32439 --- [           main] log4jdbc.debug                           : WARNING!  log4jdbc couldn't find any underlying jdbc drivers.
+2019-11-13 00:52:19.185 DEBUG 32439 --- [           main] log4jdbc.debug                           : DriverSpy intialization done.
+2019-11-13 00:52:19.193 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker'
+2019-11-13 00:52:19.194 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2019-11-13 00:52:19.194 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:19.198 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration'
+2019-11-13 00:52:19.200 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+2019-11-13 00:52:19.203 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+2019-11-13 00:52:19.206 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration'
+2019-11-13 00:52:19.209 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'tomcatPoolDataSourceMetadataProvider'
+2019-11-13 00:52:19.212 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+2019-11-13 00:52:19.214 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializationConfiguration'
+2019-11-13 00:52:19.217 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+2019-11-13 00:52:19.219 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration'
+2019-11-13 00:52:19.221 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$MapperScannerRegistrarNotFoundConfiguration'
+2019-11-13 00:52:19.224 DEBUG 32439 --- [           main] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2019-11-13 00:52:19.224 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration'
+2019-11-13 00:52:19.224 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1453b4de] - unable to determine constructor/method parameter names
+2019-11-13 00:52:19.225 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties'
+2019-11-13 00:52:19.280 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' via constructor to bean named 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties'
+2019-11-13 00:52:19.280 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0'
+2019-11-13 00:52:19.286 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sqlSessionFactory'
+2019-11-13 00:52:19.287 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'sqlSessionFactory' via factory method to bean named 'dataSource'
+2019-11-13 00:52:19.297 DEBUG 32439 --- [           main] o.mybatis.spring.SqlSessionFactoryBean   : Property 'mapperLocations' was not specified.
+2019-11-13 00:52:19.299 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sqlSessionTemplate'
+2019-11-13 00:52:19.299 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'sqlSessionTemplate' via factory method to bean named 'sqlSessionFactory'
+2019-11-13 00:52:19.309 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+2019-11-13 00:52:19.312 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+2019-11-13 00:52:19.315 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+2019-11-13 00:52:19.317 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$LoggingCodecConfiguration'
+2019-11-13 00:52:19.319 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'loggingCodecCustomizer'
+2019-11-13 00:52:19.319 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'loggingCodecCustomizer' via factory method to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+2019-11-13 00:52:19.321 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration$JacksonCodecConfiguration'
+2019-11-13 00:52:19.324 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonCodecCustomizer'
+2019-11-13 00:52:19.324 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonCodecCustomizer' via factory method to bean named 'jacksonObjectMapper'
+2019-11-13 00:52:19.326 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration'
+2019-11-13 00:52:19.328 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+2019-11-13 00:52:19.328 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration$$EnhancerBySpringCGLIB$$1d7970c7] - unable to determine constructor/method parameter names
+2019-11-13 00:52:19.329 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2019-11-13 00:52:19.330 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+2019-11-13 00:52:19.332 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration'
+2019-11-13 00:52:19.332 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration$$EnhancerBySpringCGLIB$$fa0a921b] - unable to determine constructor/method parameter names
+2019-11-13 00:52:19.333 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+2019-11-13 00:52:19.334 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration' via constructor to bean named 'dataSource'
+2019-11-13 00:52:19.334 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$JdbcTemplateConfiguration' via constructor to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+2019-11-13 00:52:19.336 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jdbcTemplate'
+2019-11-13 00:52:19.351 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration$NamedParameterJdbcTemplateConfiguration'
+2019-11-13 00:52:19.354 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
+2019-11-13 00:52:19.355 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
+2019-11-13 00:52:19.362 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
+2019-11-13 00:52:19.364 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration'
+2019-11-13 00:52:19.366 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityFilterChainRegistration'
+2019-11-13 00:52:19.366 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'securityFilterChainRegistration' via factory method to bean named 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2019-11-13 00:52:19.376 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+2019-11-13 00:52:19.378 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'taskSchedulerBuilder'
+2019-11-13 00:52:19.379 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2019-11-13 00:52:19.380 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+2019-11-13 00:52:19.383 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration'
+2019-11-13 00:52:19.384 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration$$EnhancerBySpringCGLIB$$8e7ffc1d] - unable to determine constructor/method parameter names
+2019-11-13 00:52:19.384 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$DataSourceTransactionManagerConfiguration' via constructor to bean named 'dataSource'
+2019-11-13 00:52:19.385 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+2019-11-13 00:52:19.385 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+2019-11-13 00:52:19.390 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+2019-11-13 00:52:19.394 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionManager'
+2019-11-13 00:52:19.395 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'transactionManager' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+2019-11-13 00:52:19.402 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
+2019-11-13 00:52:19.405 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
+2019-11-13 00:52:19.408 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
+2019-11-13 00:52:19.410 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration'
+2019-11-13 00:52:19.411 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration$$EnhancerBySpringCGLIB$$e009c0f0] - unable to determine constructor/method parameter names
+2019-11-13 00:52:19.411 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration' via constructor to bean named 'transactionManager'
+2019-11-13 00:52:19.414 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'transactionTemplate'
+2019-11-13 00:52:19.420 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+2019-11-13 00:52:19.420 DEBUG 32439 --- [           main] ocalVariableTableParameterNameDiscoverer : Cannot find '.class' file for class [class org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration$$EnhancerBySpringCGLIB$$7c955d2f] - unable to determine constructor/method parameter names
+2019-11-13 00:52:19.423 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'restTemplateBuilder'
+2019-11-13 00:52:19.428 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+2019-11-13 00:52:19.431 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'multipartResolver'
+2019-11-13 00:52:19.432 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.autoconfigure.context.ContextCredentialsAutoConfiguration'
+2019-11-13 00:52:19.434 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'awsCredentialsProperties'
+2019-11-13 00:52:19.438 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.core.env.ResourceIdResolver.BEAN_NAME'
+2019-11-13 00:52:19.441 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'stackResourceRegistryFactoryBean'
+2019-11-13 00:52:19.441 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.autoconfigure.context.ContextStackAutoConfiguration'
+2019-11-13 00:52:19.448 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'amazonCloudFormation'
+2019-11-13 00:52:19.462 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@f9f3928: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-13 00:52:19.462 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@404eca05: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-13 00:52:19.462 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@58b91d57: Unable to load config file
+2019-11-13 00:52:19.478 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'stackResourceRegistryFactoryBean' via factory method to bean named 'amazonCloudFormation'
+2019-11-13 00:52:19.478 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'cloud.aws.stack.auto' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:19.478 DEBUG 32439 --- [           main] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'cloud.aws.stack.auto' in PropertySource 'configurationProperties' with value of type String
+2019-11-13 00:52:19.479 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.autoconfigure.context.ContextRegionProviderAutoConfiguration'
+2019-11-13 00:52:19.482 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'awsRegionProperties'
+2019-11-13 00:52:19.485 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.autoconfigure.context.ContextResourceLoaderAutoConfiguration'
+2019-11-13 00:52:19.487 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'awsS3ResourceLoaderProperties'
+2019-11-13 00:52:19.489 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'amazonS3'
+2019-11-13 00:52:19.518 DEBUG 32439 --- [           main] com.amazonaws.metrics.AwsSdkMetrics      : Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+2019-11-13 00:52:19.522 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@f9f3928: Unable to load Client Side Monitoring configurations from environment variables!
+2019-11-13 00:52:19.522 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@404eca05: Unable to load Client Side Monitoring configurations from system properties variables!
+2019-11-13 00:52:19.522 DEBUG 32439 --- [           main] c.a.m.CsmConfigurationProviderChain      : Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@58b91d57: Unable to load config file
+2019-11-13 00:52:19.540 DEBUG 32439 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.cloud.aws.context.support.io.SimpleStorageProtocolResolverConfigurer#0'
+2019-11-13 00:52:19.623 DEBUG 32439 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AmazonRdsDatabaseAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'com.amazonaws.services.rds.AmazonRDSClient', 'org.springframework.cloud.aws.jdbc.config.annotation.AmazonRdsInstanceConfiguration' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.aws.jdbc.config.annotation.AmazonRdsInstanceConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CodecsAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.codec.CodecConfigurer' (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonCodecConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonCodecConfiguration#jacksonCodecCustomizer matched:
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'jacksonObjectMapper' (OnBeanCondition)
+
+   ContextCredentialsAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.amazonaws.auth.AWSCredentialsProvider' (OnClassCondition)
+
+   ContextResourceLoaderAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.amazonaws.services.s3.AmazonS3Client' (OnClassCondition)
+
+   ContextStackAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.amazonaws.services.cloudformation.AmazonCloudFormation' (OnClassCondition)
+
+   ContextStackAutoConfiguration#stackResourceRegistryFactoryBean matched:
+      - @ConditionalOnMissingBean (types: org.springframework.cloud.aws.core.env.stack.StackResourceRegistry; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.DataSourceTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.DataSourceTransactionManagerConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet; types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnProperty (server.error.whitelabel.enabled) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   GenericCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration automatic cache type (CacheCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.http.encoding.enabled) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration#messageConverters matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.http.HttpMessageConverters; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.StringHttpMessageConverter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration#jacksonObjectMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.module.paramnames.ParameterNamesModule' (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration#parameterNamesModule matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.module.paramnames.ParameterNamesModule; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'jacksonObjectMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration.JdbcTemplateConfiguration#jdbcTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration.NamedParameterJdbcTemplateConfiguration#namedParameterJdbcTemplate matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a primary bean from beans 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'javax.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.servlet.multipart.enabled) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: javax.servlet.MultipartConfigElement,org.springframework.web.multipart.commons.CommonsMultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.ibatis.session.SqlSessionFactory', 'org.mybatis.spring.SqlSessionFactoryBean' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a primary bean from beans 'dataSource' (OnBeanCondition)
+
+   MybatisAutoConfiguration#sqlSessionFactory matched:
+      - @ConditionalOnMissingBean (types: org.apache.ibatis.session.SqlSessionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisAutoConfiguration#sqlSessionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.SqlSessionTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean,org.mybatis.spring.mapper.MapperScannerConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisLanguageDriverAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.apache.ibatis.scripting.LanguageDriver' (OnClassCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration automatic cache type (CacheCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   RestTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityAutoConfiguration#authenticationEventPublisher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationEventPublisher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityFilterAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SecurityFilterAutoConfiguration#securityFilterChainRegistration matched:
+      - @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) found bean 'springSecurityFilterChain' (OnBeanCondition)
+
+   ServletWebServerFactoryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.servlet.ServletRequest' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebServerFactoryAutoConfiguration#tomcatServletWebServerFactoryCustomizer matched:
+      - @ConditionalOnClass found required class 'org.apache.catalina.startup.Tomcat' (OnClassCondition)
+
+   SimpleCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration automatic cache type (CacheCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutionAutoConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a primary bean from beans 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   UserDetailsServiceAutoConfiguration#inMemoryUserDetailsManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.registration.ClientRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'javax.validation.executable.ExecutableValidator' (OnClassCondition)
+      - @ConditionalOnResource found location classpath:META-INF/services/javax.validation.spi.ValidationProvider (OnResourceCondition)
+
+   ValidationAutoConfiguration#defaultValidator matched:
+      - @ConditionalOnMissingBean (types: javax.validation.Validator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ValidationAutoConfiguration#methodValidationPostProcessor matched:
+      - @ConditionalOnMissingBean (types: org.springframework.validation.beanvalidation.MethodValidationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter matched:
+      - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.HiddenHttpMethodFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration matched:
+      - @ConditionalOnEnabledResourceChain enabled (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'tilesViewResolver', 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver; types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration matched:
+      - @ConditionalOnProperty (spring.mvc.favicon.enabled) matched (OnPropertyCondition)
+
+   WebSocketServletAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'javax.websocket.server.ServerContainer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.tomcat.websocket.server.WsSci' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration#websocketServletWebServerCustomizer matched:
+      - @ConditionalOnMissingBean (names: websocketServletWebServerCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.lang.annotation.Aspect' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.ConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerJpaDependencyConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.github.benmanes.caffeine.cache.Caffeine', 'org.springframework.cache.caffeine.CaffeineCacheManager' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Cluster' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.driver.core.Session' (OnClassCondition)
+
+   ClientHttpConnectorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CloudServiceConnectorsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.config.java.CloudScanConfiguration' (OnClassCondition)
+
+   CloudWatchExportAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.cloudwatch.CloudWatchMeterRegistry' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.couchbase.client.java.Bucket', 'com.couchbase.client.spring.cache.CouchbaseCacheManager' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource found supported pooled data source (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) found beans of type 'javax.sql.DataSource' dataSource (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+         - @ConditionalOnProperty (spring.datasource.type=org.apache.tomcat.jdbc.pool.DataSource) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jmx.enabled=true) found different value in property 'enabled' (OnPropertyCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   EhCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'net.sf.ehcache.Cache', 'org.springframework.cache.ehcache.EhCacheCacheManager' (OnClassCondition)
+
+   ElastiCacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.amazonaws.services.elasticache.AmazonElastiCache' (OnClassCondition)
+
+   ElasticsearchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.Client' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.Client' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.Client' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedMongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.NettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ui.freemarker.FreeMarkerConfigurationFactory' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.WebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.hazelcast.core.HazelcastInstance', 'com.hazelcast.spring.cache.HazelcastCacheManager' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.persistence.EntityManager' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.Resource' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'javax.cache.Caching', 'org.springframework.cache.jcache.JCacheCacheManager' (OnClassCondition)
+
+   JacksonAutoConfiguration.JodaDateTimeJacksonConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'com.fasterxml.jackson.datatype.joda.ser.DateTimeSerializer', 'com.fasterxml.jackson.datatype.joda.cfg.JacksonJodaDateFormat' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JdbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jdbc.repository.config.JdbcConfiguration' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.spring.SpringComponentProvider' (OnClassCondition)
+
+   JestAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.searchbox.client.JestClient' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.jms.Message' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jmx.enabled=true) found different value in property 'enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.json.bind.Jsonb' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   org.springframework.boot.autoconfigure.mail.MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.mail.internet.MimeMessage' (OnClassCondition)
+
+   org.springframework.cloud.aws.autoconfigure.mail.MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.amazonaws.services.simpleemail.AmazonSimpleEmailService' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnSingleCandidate did not find required type 'org.springframework.mail.javamail.JavaMailSenderImpl' (OnBeanCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename validation (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.cloud.aws.messaging.listener.SimpleMessageListenerContainer' (OnClassCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.MongoClient' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.FreeMarkerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.mybatis.scripting.freemarker.FreeMarkerLanguageDriver', 'org.mybatis.scripting.freemarker.FreeMarkerLanguageDriverConfig' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.LegacyFreeMarkerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.mybatis.scripting.freemarker.FreeMarkerLanguageDriver' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.LegacyVelocityConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.mybatis.scripting.velocity.Driver' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.ThymeleafConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.mybatis.scripting.thymeleaf.ThymeleafLanguageDriver' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.VelocityConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.mybatis.scripting.velocity.VelocityLanguageDriver', 'org.mybatis.scripting.velocity.VelocityLanguageDriverConfig' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.SessionFactory' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.ogm.session.Neo4jSession' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.client.registration.ClientRegistration' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.jwt.JwtDecoder' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveOAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveOAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.jwt.ReactiveJwtDecoder' (OnClassCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   ReactorCoreAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   RedisReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   RestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClient' (OnClassCondition)
+
+   SecurityDataConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.data.repository.query.SecurityEvaluationContextExtension' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedJetty:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.webapp.WebAppContext' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedTomcat:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.server.ServletWebServerFactory; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.server.ServletWebServerFactory' webServerFactory (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.servlet.Servlet', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedUndertow:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SolrAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.impl.CloudSolrClient' (OnClassCondition)
+
+   SolrRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.solr.client.solrj.SolrClient' (OnClassCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.application.admin.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+   SpringBootWebSecurityConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' webSecurityConfig (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+   SpringDataWebAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.web.PageableHandlerMethodArgumentResolver' (OnClassCondition)
+
+   TaskSchedulingAutoConfiguration#taskScheduler:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring5.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) found different value in property 'proxy-target-class' (OnPropertyCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#localeResolver:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.locale) did not find property 'locale' (OnPropertyCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebServiceTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.oxm.Marshaller' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.JettyWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.UndertowWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.undertow.websockets.jsr.Bootstrap' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.transaction.TransactionManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.cloud.aws.autoconfigure.context.ContextInstanceDataAutoConfiguration
+
+    org.springframework.cloud.aws.autoconfigure.context.ContextRegionProviderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2019-11-13 00:52:19.630  INFO 32439 --- [           main] c.chicken.review.ReviewApplicationTests  : Started ReviewApplicationTests in 5.763 seconds (JVM running for 6.257)
+2019-11-13 00:52:19.631 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Storing ApplicationContext in cache under key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.632 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2019-11-13 00:52:19.632 DEBUG 32439 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [DefaultTestContext@2a5c8d3f testClass = ReviewApplicationTests, testInstance = com.chicken.review.ReviewApplicationTests@5ff6dd3c, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]].
+2019-11-13 00:52:19.641 DEBUG 32439 --- [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test context [[DefaultTestContext@2a5c8d3f testClass = ReviewApplicationTests, testInstance = com.chicken.review.ReviewApplicationTests@5ff6dd3c, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]].
+2019-11-13 00:52:19.642 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.642 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2019-11-13 00:52:19.645 DEBUG 32439 --- [           main] tractDirtiesContextTestExecutionListener : Before test method: context [DefaultTestContext@2a5c8d3f testClass = ReviewApplicationTests, testInstance = com.chicken.review.ReviewApplicationTests@5ff6dd3c, testMethod = contextLoads@ReviewApplicationTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2019-11-13 00:52:19.646 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.646 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2019-11-13 00:52:19.763 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.763 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+2019-11-13 00:52:19.763 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.764 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2019-11-13 00:52:19.764 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.764 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2019-11-13 00:52:19.765 DEBUG 32439 --- [           main] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
+2019-11-13 00:52:19.765 DEBUG 32439 --- [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@d13baac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2019-11-13 00:52:19.766 DEBUG 32439 --- [           main] tractDirtiesContextTestExecutionListener : After test method: context [DefaultTestContext@2a5c8d3f testClass = ReviewApplicationTests, testInstance = com.chicken.review.ReviewApplicationTests@5ff6dd3c, testMethod = contextLoads@ReviewApplicationTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2019-11-13 00:52:19.767 DEBUG 32439 --- [           main] o.s.t.c.w.ServletTestExecutionListener   : Resetting RequestContextHolder for test context [DefaultTestContext@2a5c8d3f testClass = ReviewApplicationTests, testInstance = com.chicken.review.ReviewApplicationTests@5ff6dd3c, testMethod = contextLoads@ReviewApplicationTests, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]].
+2019-11-13 00:52:19.767 DEBUG 32439 --- [           main] tractDirtiesContextTestExecutionListener : After test class: context [DefaultTestContext@2a5c8d3f testClass = ReviewApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@752325ad testClass = ReviewApplicationTests, locations = '{}', classes = '{class com.chicken.review.ReviewApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@44c8afef, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12f41634, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4a87761d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@543c6f6d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.support.DependencyInjectionTestExecutionListener.reinjectDependencies' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+2019-11-13 00:52:19.798 DEBUG 32439 --- [       Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@4bff7da0, started on Wed Nov 13 00:52:14 KST 2019
+2019-11-13 00:52:19.800 DEBUG 32439 --- [       Thread-2] h.i.c.PoolingHttpClientConnectionManager : Connection manager is shutting down
+2019-11-13 00:52:19.800 DEBUG 32439 --- [       Thread-2] h.i.c.PoolingHttpClientConnectionManager : Connection manager shut down
+2019-11-13 00:52:19.800 DEBUG 32439 --- [       Thread-2] h.i.c.PoolingHttpClientConnectionManager : Connection manager is shutting down
+2019-11-13 00:52:19.800 DEBUG 32439 --- [       Thread-2] h.i.c.PoolingHttpClientConnectionManager : Connection manager shut down
+2019-11-13 00:52:19.801 DEBUG 32439 --- [       Thread-2] h.i.c.PoolingHttpClientConnectionManager : Connection manager is shutting down
+2019-11-13 00:52:19.801 DEBUG 32439 --- [       Thread-2] h.i.c.PoolingHttpClientConnectionManager : Connection manager shut down
+2019-11-13 00:52:19.801  INFO 32439 --- [       Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-13 00:52:19.802  INFO 32439 --- [       Thread-2] org.apache.tiles.access.TilesAccess      : Removing TilesContext for context: org.springframework.web.servlet.view.tiles3.SpringWildcardServletTilesApplicationContext
+2019-11-13 00:52:19.803 DEBUG 32439 --- [nnection-reaper] com.amazonaws.http.IdleConnectionReaper  : Reaper thread: 
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at com.amazonaws.http.IdleConnectionReaper.run(IdleConnectionReaper.java:188)
+
+2019-11-13 00:52:19.803 DEBUG 32439 --- [nnection-reaper] com.amazonaws.http.IdleConnectionReaper  : Shutting down reaper thread.
